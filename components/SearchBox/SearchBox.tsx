@@ -6,9 +6,7 @@ interface SearchBoxProps {
 }
 
 export default function SearchBox({ value, onSearch }: SearchBoxProps) {
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement, HTMLInputElement>,
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     onSearch(e.currentTarget.value);
   };
 
