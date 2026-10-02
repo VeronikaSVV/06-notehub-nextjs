@@ -1,0 +1,27 @@
+export type NoteTag = "Todo" | "Work" | "Personal" | "Meeting" | "Shopping";
+
+export interface Note {
+  id: string;
+  title: string;
+  content: string;
+  tag: NoteTag;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export type NewNoteData = Pick<Note, "title" | "content" | "tag">;
+
+export interface UpdatedNoteData {
+  id: string;
+  title?: string;
+  content?: string;
+  tag?: NoteTag;
+}
+
+export interface NoteResponse {
+  id: string;
+  title: string;
+  content: string;
+  categoryId: string;
+  userId: string;
+}
