@@ -17,9 +17,3 @@ export interface UpdatedNoteData {
   content?: string;
   tag?: NoteTag;
 }
-
-export interface NoteResponse {
-  id: string;
-  title: string;
-  content: string;
-}
